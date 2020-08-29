@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+<body>
+
+
+    <main class="container" id="main">
+      <form class="new-contain" action="">
+          <p>
+              <label for="name">Name</label>
+              <input type="type" id="petName">
+          </p>
+          <p>
+            <label for="age">Age</label>
+            <input type="number" id="petAge">
+        </p>
+        <p>
+            <label for="type">Type</label>
+            <select name="text" id="petType">
+                <option value="disabled selected"> --- Select a Type ---</option>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Fish">Fish</option>
+            </select>
+        </p>
+        <p>
+            <label for="nature">Nature</label>
+            <select name="text" id="petNature">
+                <option value="disabled selected"> --- Select a Nature ---</option>
+                <option value="Aggressive">Aggressive</option>
+                <option value="Timid">Timid</option>
+                <option value="Mean">Mean</option>
+                <option value="Kind">Kind</option>
+            </select>
+        </p>
+        <p>
+            <label for="breed">Breed</label>
+            <input type="text" id="petBreed">
+        </p>
+        <p>
+            <label for="gender">Gender</label>
+            <input type="text" id="petGender">
+        </p>
+        <p>
+            <label for="service">Service</label>
+            <select name="services" id="petService">
+                <option value="disabled selected"> ---- Select a service---</option>
+                <option value="shower">Shower</option>
+                <option value="tail-cut">Tail Cut</option>
+                <option value="ears-clipped">Ears Clipped</option>
+                <option value="toes-clipped">Toes Clipped</option>
+                <option value="full-service">Full Service</option>
+            </select>
+        </p>
+        <p>
+            <label for="owner">Owners Name</label>
+            <input type="text" id="petOwner">
+        </p>
+        <p>
+            <label for="contact">Contact Number</label>
+            <input type="text" id="petContact">
+        </p>
+        <p>
+            <label for="covid">Corona Options</label>
+            <select name="covid" id="petCovid">
+                <option value="disabled selected"> ---- Select a type---</option>
+                <option value="pick-up">Pick up</option>
+                <option value="appointment">Appointment</option>
+            </select>
+        </p>
+        <input id="btn-register" type="button" value="Register">
+        
+
+        
+      </form>
+
+    </main>
+    <!--it works with directory.js
+    <section class="container" id="pets">
+
+    </section>-->
+
+    <section class="container form-inline">
+        <input class="form-control" type="search" name="search" id="petSearch">
+        <button class="btn btn-primary" onclick="searchPet();">Search</button>
+    </section>
+
+<section class="container table-container">
+    <table class="table">
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Type</th>
+            <th>Nature</th>
+            <th>Breed</th>
+            <th>Gender</th>
+            <th>Service</th>
+            <th>Owners Name</th>
+            <th>Contact Phone</th>
+            <th>Covid Option</th>
+        </thead>
+        <tbody id="rowPet">
+
+        </tbody>
+    </table>
+</section>
+  
+    <!-- <script src="js/directory.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/test5.js"></script>
+
+
+</body>
+</html>
